@@ -13,6 +13,13 @@
 		D92BE93C2C0BA37F00BAED19 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D92BE93B2C0BA37F00BAED19 /* Base */; };
 		D92BE93E2C0BA38100BAED19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92BE93D2C0BA38100BAED19 /* Assets.xcassets */; };
 		D92BE9412C0BA38100BAED19 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D92BE9402C0BA38100BAED19 /* Base */; };
+		D92BE9492C0BA45200BAED19 /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = D92BE9482C0BA45200BAED19 /* artists.json */; };
+		D92BE94B2C0BA5D900BAED19 /* Artists.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE94A2C0BA5D900BAED19 /* Artists.swift */; };
+		D92BE94D2C0BA5FF00BAED19 /* ArtistsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE94C2C0BA5FF00BAED19 /* ArtistsLoader.swift */; };
+		D92BE94F2C0BA91800BAED19 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE94E2C0BA91800BAED19 /* DetailViewController.swift */; };
+		D92BE9512C0BA93000BAED19 /* WorkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE9502C0BA93000BAED19 /* WorkDetailViewController.swift */; };
+		D92BE9532C0BABD400BAED19 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE9522C0BABD400BAED19 /* CustomTableViewCell.swift */; };
+		D92BE9562C0BB05400BAED19 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BE9552C0BB05400BAED19 /* WorkTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		D92BE93D2C0BA38100BAED19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D92BE9402C0BA38100BAED19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D92BE9422C0BA38100BAED19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92BE9482C0BA45200BAED19 /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
+		D92BE94A2C0BA5D900BAED19 /* Artists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artists.swift; sourceTree = "<group>"; };
+		D92BE94C2C0BA5FF00BAED19 /* ArtistsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsLoader.swift; sourceTree = "<group>"; };
+		D92BE94E2C0BA91800BAED19 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D92BE9502C0BA93000BAED19 /* WorkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailViewController.swift; sourceTree = "<group>"; };
+		D92BE9522C0BABD400BAED19 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D92BE9552C0BB05400BAED19 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 		D92BE9332C0BA37F00BAED19 /* artist-gallery-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D92BE9542C0BB04100BAED19 /* Cell */,
+				D92BE9482C0BA45200BAED19 /* artists.json */,
 				D92BE9342C0BA37F00BAED19 /* AppDelegate.swift */,
 				D92BE9362C0BA37F00BAED19 /* SceneDelegate.swift */,
 				D92BE9382C0BA37F00BAED19 /* ViewController.swift */,
@@ -63,8 +79,21 @@
 				D92BE93D2C0BA38100BAED19 /* Assets.xcassets */,
 				D92BE93F2C0BA38100BAED19 /* LaunchScreen.storyboard */,
 				D92BE9422C0BA38100BAED19 /* Info.plist */,
+				D92BE94A2C0BA5D900BAED19 /* Artists.swift */,
+				D92BE94C2C0BA5FF00BAED19 /* ArtistsLoader.swift */,
+				D92BE94E2C0BA91800BAED19 /* DetailViewController.swift */,
+				D92BE9502C0BA93000BAED19 /* WorkDetailViewController.swift */,
 			);
 			path = "artist-gallery-ios";
+			sourceTree = "<group>";
+		};
+		D92BE9542C0BB04100BAED19 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D92BE9522C0BABD400BAED19 /* CustomTableViewCell.swift */,
+				D92BE9552C0BB05400BAED19 /* WorkTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +156,7 @@
 			files = (
 				D92BE93E2C0BA38100BAED19 /* Assets.xcassets in Resources */,
 				D92BE9412C0BA38100BAED19 /* Base in Resources */,
+				D92BE9492C0BA45200BAED19 /* artists.json in Resources */,
 				D92BE93C2C0BA37F00BAED19 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D92BE9392C0BA37F00BAED19 /* ViewController.swift in Sources */,
+				D92BE94D2C0BA5FF00BAED19 /* ArtistsLoader.swift in Sources */,
+				D92BE9532C0BABD400BAED19 /* CustomTableViewCell.swift in Sources */,
 				D92BE9352C0BA37F00BAED19 /* AppDelegate.swift in Sources */,
+				D92BE9562C0BB05400BAED19 /* WorkTableViewCell.swift in Sources */,
+				D92BE9512C0BA93000BAED19 /* WorkDetailViewController.swift in Sources */,
+				D92BE94F2C0BA91800BAED19 /* DetailViewController.swift in Sources */,
+				D92BE94B2C0BA5D900BAED19 /* Artists.swift in Sources */,
 				D92BE9372C0BA37F00BAED19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
